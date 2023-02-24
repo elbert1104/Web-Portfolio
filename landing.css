@@ -13,3 +13,10 @@ body {
 	background-repeat: no-repeat;
 }
 
+#nav {
+	background-color: rgba(235, 216, 184, 1);
+}
+
+#side-menu {
+	width: 400px;
+}
