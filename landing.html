@@ -17,21 +17,31 @@
 	<!-- link to CSS -->
 	<link rel="stylesheet" type="text/css" href="./landing.css">
 </head>
-<body>
+<body class="min-vh-100 d-block">
 	<!-- Same Navbar to all Links -->
 	<!-- Navbar -->
 
-	<nav class="bg-primary min-vh-10">
+	<nav class="d-inline-block align-middle w-100" id="nav">
 		<ul>
-			<li class="d-inline-block">
-				<img src="./Images/Elbert.jpg" id="img-home" class="rounded-circle m-3" height="70px" width="70px" >
+			<li class=" d-inline-block align-middle">
+				
+				<a href="./landing.html"><img src="./Images/Elbert.jpg" id="img-home" class="rounded-circle p-2" height="70px" width="70px" ></a>
 			</li>
-			<div class="d-inline-block float-right ">
-			<div class="d-flex flex-row ml-75 w-75 list-unstyled"> 
-				<li class="col-3">Home</li>
-				<li class="col-3">Gallery</li>
-				<li class="col-3">About Me</li>
-				<li class="col-3">Contact Me</li>
+			<div class="d-inline-block float-right" id="side-menu">
+			<div class="d-flex flex-row  list-unstyled"> 
+				<li class="col-3 mt-4 align-middle">
+				<a href="./landing.html">Home</a>
+				</li>
+
+				<li class="col-3 mt-4 align-middle">
+					<a href="./gallery.html">Gallery</a>
+			 	</li>
+				<li class="col-3 mt-4 align-middle">
+					<a href="./aboutme.html">About Me</a>
+				</li>
+				<li class="col-3 mt-4 align-middle">
+					<a href="./contactus.html">Contact Me</a>
+				</li>
 			</div>
 			</div>
 		</ul>
@@ -40,7 +50,7 @@
 
 
 
-	<h1 class="text-light">Welcome!</h1>
+	<h1 class="h-100 text-light text-center" id="hello">Welcome!</h1>
 
 
 
