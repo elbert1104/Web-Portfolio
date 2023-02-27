@@ -1,0 +1,36 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Oswald" , sans-serif; 
+
+}
+
+#nav {
+	background-color: rgba(235, 216, 184, 1);
+}
+
+#contact {
+	background-color: rgba(235, 216, 184, 1);
+}
+
+a {
+color: black;
+
+}
+
+#side-menu {
+	width: 400px;
+}
+
+body {
+	background-image: url(./Images/beige-aged-background.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.container-bg {
+	background-color: rgba(0, 0, 0, .5);
+}
+
+

@@ -8,19 +8,30 @@
 }
 
 body {
-	background-image: url(./Images/background.jpg);
+	background-image: url(./Images/beige-aged-background.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 
 #nav {
 	background-color: rgba(235, 216, 184, 1);
+
 }
 
 #side-menu {
-	
+	width: 400px;
 }
 
 #hello {
 	margin-top: 200px;
 }
+
+a {
+color: black;
+
+}
+
+.container-bg {
+	background-color: rgba(0, 0, 0, .1);
+}
+

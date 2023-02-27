@@ -5,3 +5,36 @@
 	font-family: "Oswald" , sans-serif; 
 
 }
+
+#nav {
+	
+	background-color: rgba(235, 216, 184, 1);
+	text-decoration: none !important;
+}
+
+#aboutme {
+	height: 600px;
+}
+
+#nav1 {
+	text-decoration: none !important;
+}
+
+a {
+color: black;
+
+}
+
+#side-menu {
+	width: 400px;
+
+}
+
+body {
+	background-image: url(./Images/beige-aged-background.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+
+.container-bg {
+	background-color: #C4A484;
+}
