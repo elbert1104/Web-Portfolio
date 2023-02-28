@@ -21,29 +21,25 @@
 	<!-- Same Navbar to all Links -->
 	<!-- Navbar -->
 <section class="container-bg min-vh-100">
-	<nav class="d-inline-block align-middle w-100 text-light position-fixed-top" id="nav">
-		<ul class="m-0">
-			<li class=" d-inline-block align-middle">
+	<nav class="navbar navbar-expand-lg navbar-light " id="nav">
+		<a class="navbar-brand" href="./index.html"><img src="./Images/Elbert.jpg" id="img-home"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav ml-auto ">
+				<li class="nav-item active">
+					<a class="nav-link text-dark" href="./index.html">Home <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link text-dark" href="./aboutme.html">About Me</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link text-dark" href="./contactus.html">Contact Me</a>
+				</li>
 				
-				<a href="./index.html"><img src="./Images/Elbert.jpg" id="img-home" class="rounded-circle p-2" height="70px" width="70px" ></a>
-			</li>
-			<div class="d-inline-block float-right" id="side-menu">
-			<div class="d-flex flex-row  list-unstyled"> 
-				<li class="col-4 mt-4 align-middle text-right">
-				   <a href="./index.html">Home</a>
-				</li>
-
-				
-				<li class="col-4 mt-4 align-middle text-right">
-					<a href="./aboutme.html" >About Me</a>
-				</li>
-				<li class="col-4 mt-4 align-middle text-right">
-					<a href="./contactus.html" >Contact Me</a>
-				</li>
-			</div>
-			</div>
-		</ul>
-
+			</ul>
+		</div>
 	</nav>
 
 	<h1 class="h-130 text-dark text-center" id="hello">Welcome to my Portfolio!</h1>

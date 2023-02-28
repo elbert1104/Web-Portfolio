@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">	
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Elbert's Portfolio</title>
 
 	<!-- Bootstrap Link -->
@@ -19,35 +19,31 @@
 </head>
 <body>
 
-	<section class="container-bg position-fixed-top">
-		<!-- Same Navbar to all Links -->
-		<!-- Navbar -->
+	
 
-		<nav class="d-inline-block align-middle w-100 text-light position-fixed-top" id="nav">
-			<ul class="m-0">
-				<li class=" d-inline-block align-middle">
-
-					<a href="./index.html"><img src="./Images/Elbert.jpg" id="img-home" class="rounded-circle p-2" height="70px" width="70px" ></a>
+		<section class="container-bg min-vh-100">
+	<nav class="navbar navbar-expand-lg navbar-light " id="nav">
+		<a class="navbar-brand" href="./index.html"><img src="./Images/Elbert.jpg" id="img-home"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav ml-auto ">
+				<li class="nav-item active">
+					<a class="nav-link text-dark" href="./index.html">Home <span class="sr-only">(current)</span></a>
 				</li>
-				<div class="d-inline-block float-right" id="side-menu">
-					<div class="d-flex flex-row  list-unstyled"> 
-						<li class="col-4 mt-4 align-middle text-right">
-							<a href="./index.html">Home</a>
-						</li>
-
-						
-						<li class="col-4 mt-4 align-middle text-right">
-							<a href="./aboutme.html" >About Me</a>
-						</li>
-						<li class="col-4 mt-4 align-middle text-right">
-							<a href="./contactus.html" >Contact Me</a>
-						</li>
-					</div>
-				</div>
+				<li class="nav-item">
+					<a class="nav-link text-dark" href="./aboutme.html">About Me</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link text-dark" href="./contactus.html">Contact Me</a>
+				</li>
+				
 			</ul>
+		</div>
+	</nav>
 
-		</nav>
-
+	
 
 
 
@@ -62,9 +58,9 @@
 			<h5>I'm a full-stack developer with knowledge of C++, Java, HTML, CSS, and Bootstrap</h5>
 		</div>
 		<!-- start of card -->
-		<div class="d-flex flex-row justify-content-top  mb-4 p-3" id="aboutme">
+		<div class="d-flex flex-column flex-lg-row flex-sm-column flex-md-row   mb-4 p-3" id="aboutme">
 			<!-- History -->
-			<div class=" p-2 col-4">
+			<div class=" p-2 " id="flex">
 				<!-- Carousel for History -->
 
 				
@@ -154,7 +150,7 @@
 
 
 
-						<h2 class="mt-2">History</h2>
+						<h2 class="mt-2">Background</h2>
 						<p>I graduated as a mechanical engineering at Ateneo de Davao University and currently have 7 years of experience as a mechanical engineer. I've worked with Dole Philippines Inc. as project engineer under Sanitation and Process Engineering Department. Was promoted to operations superintendent under Cookroom operations and currently a building admin officer in a mall. </p>
 					</div>
 					<!-- end of History -->
@@ -162,7 +158,7 @@
 
 					<!-- Motivation -->
 					
-					<div class=" p-2 col-4" >
+					<div class=" p-2 " id="flex" >
 					<!-- Carousel Motivation Start -->
 						<div id="carouselExampleCaptionsnew" class="carousel slide" data-ride="carousel">
 							<ol class="carousel-indicators">
@@ -220,7 +216,7 @@
 					<p>I really like coding since the first year of my college school when we had to take up basic programming language like C++ and Java, and eventually added my excitement when we dwelve into mechatronics where we had to program lego robots using Mindstorms EV3.</p>
 				</div>
 				<!-- Other Skills -->
-				<div class=" p-2 col-4">
+				<div class=" p-2 " id="flex">
 
 				<!-- start of carousel other skills -->
 				
