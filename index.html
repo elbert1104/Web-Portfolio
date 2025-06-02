@@ -8,31 +8,100 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 	<link rel="stylesheet" type="text/css" href="./landing.css">
 	<style>
-		section { padding: 60px 0; }
-		#about, #contact { background: #f8f9fa; }
+		/* Dark Theme Variables */
+		:root {
+			--bg-primary: #1a1a1a;
+			--bg-secondary: #2d2d2d;
+			--bg-accent: #3a3a3a;
+			--text-primary: #ffffff;
+			--text-secondary: #b0b0b0;
+			--accent-color: #4a9eff;
+			--accent-hover: #357abd;
+		}
+
+		body {
+			background-color: var(--bg-primary) !important;
+			color: var(--text-primary) !important;
+		}
+
+		section {
+			padding: 60px 0;
+		}
+
+		#about, #contact, #projects {
+			background: var(--bg-secondary) !important;
+		}
+
+		.text-dark {
+			color: var(--text-primary) !important;
+		}
+
+		.card {
+			background-color: var(--bg-accent) !important;
+			border: 1px solid #4a4a4a !important;
+			color: var(--text-primary) !important;
+		}
+
+		.btn-primary {
+			background-color: var(--accent-color) !important;
+			border-color: var(--accent-color) !important;
+		}
+
+		.btn-primary:hover {
+			background-color: var(--accent-hover) !important;
+			border-color: var(--accent-hover) !important;
+		}
+
+		.btn-outline-primary {
+			color: var(--accent-color) !important;
+			border-color: var(--accent-color) !important;
+		}
+
+		.btn-outline-primary:hover {
+			background-color: var(--accent-color) !important;
+			border-color: var(--accent-color) !important;
+			color: white !important;
+		}
+
+		.text-muted {
+			color: var(--text-secondary) !important;
+		}
+
+		.badge-secondary {
+			background-color: var(--accent-color) !important;
+			color: white !important;
+		}
+
+		.text-primary {
+			color: var(--accent-color) !important;
+		}
 	</style>
 </head>
 <body class="min-vh-100 d-block">
-<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="nav">
-	<a class="navbar-brand" href="#home"><img src="./Images/Elbert.jpg" id="img-home"></a>
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="nav">
+	<a class="navbar-brand font-weight-bold" href="#home">Elbert Legaspina</a>
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 		<span class="navbar-toggler-icon"></span>
 	</button>
 	<div class="collapse navbar-collapse" id="navbarNav">
 		<ul class="navbar-nav ml-auto">
 			<li class="nav-item active">
-				<a class="nav-link text-dark" href="#home">Home</a>
+				<a class="nav-link text-light" href="#home">Home</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link text-dark" href="#about">About Me</a>
+				<a class="nav-link text-light" href="#about">About Me</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link text-dark" href="#aboutme-section">Background & Skills</a>
+				<a class="nav-link text-light" href="#aboutme-section">Background & Skills</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link text-dark" href="#contact">Contact Me</a>
+				<a class="nav-link text-light" href="#projects">Projects</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link text-light" href="#contact">Contact Me</a>
 			</li>
 		</ul>
 	</div>
@@ -41,8 +110,14 @@
 
 	<!-- Home Section -->
 	<section id="home" style="padding-top: 80px;">
-		<h1 class="h-130 text-dark text-center" id="hello">Welcome to my Portfolio!</h1>
-		
+		<div class="text-center">
+			<h1 class="display-4 text-light mb-3" id="hello">Welcome to my Portfolio!</h1>
+			<p class="lead text-muted">Mechanical Engineer & Web Developer</p>
+			<div class="mt-4">
+				<a href="#about" class="btn btn-primary btn-lg mr-3">Learn More</a>
+				<a href="#projects" class="btn btn-outline-primary btn-lg">View Projects</a>
+			</div>
+		</div>
 	</section>
 
 	<!-- About Me Section -->
@@ -67,7 +142,7 @@
 					<p class="text-center text-md-left w-100">
 						I believe in lifelong learning and enjoy collaborating with others to create meaningful solutions. Let's connect and make something amazing together!
 					</p>
-					<div class="mt-3 w-100 d-flex justify-content-center justify-content-md-start"></div>
+					<div class="mt-3 w-100 d-flex justify-content-center justify-content-md-start">
 						<a href="mailto:elbertlegaspina@gmail.com" class="btn btn-primary btn-sm mr-2">Email Me</a>
 						<a href="https://www.linkedin.com/in/elbert-neil-legaspina-me-3aa344118/" class="btn btn-outline-primary btn-sm" target="_blank">LinkedIn</a>
 					</div>
@@ -138,7 +213,7 @@
 							</button>
 						</div>
 						<h2 class="mt-2">Background</h2>
-						<p>I graduated as a mechanical engineering at Ateneo de Davao University and currently have 7 years of experience as a mechanical engineer. I've worked with Dole Philippines Inc. as project engineer under Sanitation and Process Engineering Department. Was promoted to operations superintendent under Cookroom operations and currently a building admin officer in a mall. </p>
+						<p>I graduated with a degree in mechanical engineering from Ateneo de Davao University and currently have 10 years of experience as a mechanical engineer. I've worked with Dole Philippines Inc. as a project engineer under the Sanitation and Process Engineering Department. I was promoted to operations superintendent under Cookroom operations and am currently a facilities officer in a BPO company.</p>
 					</div>
 					<!-- Motivation -->
 					<div class="p-2" id="flex">
@@ -177,7 +252,7 @@
 							</button>
 						</div>
 						<h2 class="mt-2">Motivation</h2>
-						<p>I really like coding since the first year of my college school when we had to take up basic programming language like C++ and Java, and eventually added my excitement when we dwelve into mechatronics where we had to program lego robots using Mindstorms EV3.</p>
+						<p>I've really enjoyed coding since my first year of college when we had to learn basic programming languages like C++ and Java, and my excitement grew even more when we delved into mechatronics where we programmed LEGO robots using Mindstorms EV3.</p>
 					</div>
 					<!-- Other Skills -->
 					<div class="p-2" id="flex">
@@ -207,13 +282,125 @@
 						</div>
 						<h2 class="mt-2">Other Skills</h2>
 						<p>
-							Have knowledge in engineering softwares. AutoCad & Sketchup. Works also with microsoft office tools (Word, Excel, Powerpoint, Project.)
+							I have knowledge of engineering software including AutoCAD & SketchUp. I also work with Microsoft Office tools (Word, Excel, PowerPoint, Project).
 						</p>
 					</div>
 				</div>
 			</section>
 
+	<!-- Projects Section -->
+	<section id="projects" class="py-5">
+		<div class="container">
+			<h2 class="text-center mb-5">My Projects</h2>
+			<div class="row justify-content-center">
+				<div class="col-lg-8 col-md-10">
+					<div class="card shadow-lg border-0 mb-4">
+						<div class="card-body p-4">
+							<div class="row align-items-center">
+								<div class="col-md-4 text-center mb-3 mb-md-0">
+									<div class="project-image-container clickable-image" style="width: 200px; height: 150px; margin: 0 auto;" onclick="openImageModal('./Images/Projects/Landing Page.png', 'E-commerce Landing Page')">
+										<img src="./Images/Projects/Landing Page.png" alt="E-commerce Landing Page" class="project-image img-fluid rounded shadow" style="width: 100%; height: 100%; object-fit: cover;">
+										<div class="zoom-indicator">
+											<i class="fas fa-search-plus"></i>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-8">
+									<h3 class="card-title text-primary mb-3">E-Commerce Website</h3>
+									<p class="card-text mb-3">
+										A comprehensive e-commerce platform with full admin dashboard, product management system, user authentication, and complete shopping experience. Features include product CRUD operations, secure checkout, and responsive design across all devices.
+									</p>
+									<div class="mb-3">
+										<h6 class="text-muted mb-2">Technologies Used:</h6>
+										<div class="d-flex flex-wrap gap-2">
+											<span class="badge badge-secondary">HTML5</span>
+											<span class="badge badge-secondary">CSS3</span>
+											<span class="badge badge-secondary">JavaScript</span>
+											<span class="badge badge-secondary">Bootstrap</span>
+											<span class="badge badge-secondary">PHP</span>
+											<span class="badge badge-secondary">MySQL</span>
+											<span class="badge badge-secondary">Responsive Design</span>
+										</div>
+									</div>
+									<div class="mb-3">
+										<h6 class="text-muted mb-2">Key Features:</h6>
+										<ul class="list-unstyled mb-0">
+											<li>✓ Complete admin dashboard with analytics</li>
+											<li>✓ Product management (Add, Update, Delete, Deactivate)</li>
+											<li>✓ User authentication and login system</li>
+											<li>✓ Shopping cart and checkout process</li>
+											<li>✓ Product catalog with detailed views</li>
+											<li>✓ Responsive design for all devices</li>
+										</ul>
+									</div>
+									<div class="mt-3">
+										<a href="#" class="btn btn-primary btn-sm mr-2" onclick="alert('Please provide the live demo URL for your e-commerce project!')">
+											<i class="fas fa-external-link-alt"></i> Live Demo
+										</a>
+										<a href="#" class="btn btn-outline-primary btn-sm" onclick="alert('Please provide the GitHub repository URL for your e-commerce project!')">
+											<i class="fab fa-github"></i> View Code
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 
+					<!-- Project Gallery -->
+					<div class="mt-4">
+						<h5 class="text-center mb-3 text-primary">Project Screenshots</h5>
+						<div class="row">
+							<div class="col-md-3 col-sm-6 mb-3">
+								<div class="gallery-item clickable-image" onclick="openImageModal('./Images/Projects/Admin Dashboard.png', 'Admin Dashboard')">
+									<img src="./Images/Projects/Admin Dashboard.png" alt="Admin Dashboard" class="img-fluid rounded shadow-sm gallery-image">
+									<div class="gallery-overlay">
+										<span class="gallery-text">Admin Dashboard</span>
+										<i class="fas fa-search-plus zoom-icon"></i>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6 mb-3">
+								<div class="gallery-item clickable-image" onclick="openImageModal('./Images/Projects/Products Page.png', 'Products Page')">
+									<img src="./Images/Projects/Products Page.png" alt="Products Page" class="img-fluid rounded shadow-sm gallery-image">
+									<div class="gallery-overlay">
+										<span class="gallery-text">Products Page</span>
+										<i class="fas fa-search-plus zoom-icon"></i>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6 mb-3">
+								<div class="gallery-item clickable-image" onclick="openImageModal('./Images/Projects/Checkout Page.png', 'Checkout Page')">
+									<img src="./Images/Projects/Checkout Page.png" alt="Checkout Page" class="img-fluid rounded shadow-sm gallery-image">
+									<div class="gallery-overlay">
+										<span class="gallery-text">Checkout Page</span>
+										<i class="fas fa-search-plus zoom-icon"></i>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6 mb-3">
+								<div class="gallery-item clickable-image" onclick="openImageModal('./Images/Projects/Login Page.png', 'Login Page')">
+									<img src="./Images/Projects/Login Page.png" alt="Login Page" class="img-fluid rounded shadow-sm gallery-image">
+									<div class="gallery-overlay">
+										<span class="gallery-text">Login Page</span>
+										<i class="fas fa-search-plus zoom-icon"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row justify-content-center mt-4">
+				<div class="col-lg-8 col-md-10">
+					<div class="text-center">
+						<h4 class="mb-3">More Projects Coming Soon!</h4>
+						<p class="text-muted">I'm constantly working on new projects and expanding my portfolio. Check back regularly for updates, or feel free to reach out to discuss potential collaborations.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
 	<!-- Contact Me Section -->
 	<section id="contact">
@@ -229,8 +416,54 @@
 	</section>
 </section>
 
+<!-- Image Modal -->
+<div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+		<div class="modal-content bg-dark border-0">
+			<div class="modal-header border-bottom border-secondary">
+				<h5 class="modal-title text-light" id="imageModalLabel">Project Screenshot</h5>
+				<button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body p-0">
+				<img id="modalImage" src="" alt="" class="img-fluid w-100">
+			</div>
+			<div class="modal-footer border-top border-secondary">
+				<button type="button" class="btn btn-outline-primary" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+<script>
+	// Image Modal Functionality
+	function openImageModal(imageSrc, imageTitle) {
+		document.getElementById('modalImage').src = imageSrc;
+		document.getElementById('modalImage').alt = imageTitle;
+		document.getElementById('imageModalLabel').textContent = imageTitle;
+		$('#imageModal').modal('show');
+	}
+
+	// Close modal when clicking outside the image
+	$('#imageModal').on('click', function(e) {
+		if (e.target === this) {
+			$(this).modal('hide');
+		}
+	});
+
+	// Keyboard navigation
+	$(document).keydown(function(e) {
+		if ($('#imageModal').hasClass('show')) {
+			if (e.key === 'Escape') {
+				$('#imageModal').modal('hide');
+			}
+		}
+	});
+</script>
 </body>
 </html>
 
